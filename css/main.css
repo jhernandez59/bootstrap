@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#menu li > a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+#menu form > button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f3f3f;
+}
+
+/* Imágenes */
+.carousel-inner {
+  max-height: 39rem;
+}
+
+/* Equipo */
+#img-equipo {
+  max-height: 30rem !important;
+  width: 50%;
+}
+
+/* Seccion Mapa */
+.mapa {
+  background: url(../img/mapa.png);
+  max-width: 100%;
+  height: 500px;
+}
+
+.wrapper {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+#local {
+  margin-top: 50px;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+
+/* Sección Nuestro Equipo Local */
+#numeros-local {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#numeros-local div {
+  margin: 0 20px 0 0;
+  height: 48px;
+  text-align: left;
+}
+
+#numeros-local div:not(:last-child) {
+  border-right: 2px solid #3f3f3f;
+}
+
+#numeros-local div:not(:first-child) {
+  padding-left: 20px;
+}
+
+#numeros-local p {
+  margin: 0;
+}
+
+/* Contacto Background */
+#bg-contacto {
+  position: relative;
+  top: -130px;
+}
+
+#contacto {
+  background-color: #1b2a4e;
+  min-height: 500px;
+  position: relative;
+}
+
+/* Formulario */
+#contenedor-formulario {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fbfafa;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+#titulo-formulario {
+  color: #3f3f3f;
+}
+
+footer {
+  background-color: #1b2a4e;
+  min-height: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
+/* ========================================= media queries ======================================== */
+/* Pantalla grande */
+@media (max-width: 1200px) {
+  #local {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #intro #equipo {
+    width: 90% !important;
+  }
+
+  #img-equipo {
+    max-height: 20rem !important;
+    width: 90%;
+  }
+
+  #equipo p {
+    display: none;
+  }
+
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #bg-contacto {
+    top: -110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+}
