@@ -22,7 +22,7 @@ body {
   max-height: 39rem;
 }
 
-/* Equipo */
+/* Seccion Nuestro Equipo Imagen */
 #img-equipo {
   max-height: 30rem !important;
   width: 50%;
@@ -31,7 +31,7 @@ body {
 /* Seccion Mapa */
 .mapa {
   background: url(../img/mapa.png);
-  max-width: 100%;
+  width: 100%;
   height: 500px;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 #numeros-local div {
-  margin: 0 20px 0 0;
+  padding: 0 20px 0 0;
   height: 48px;
   text-align: left;
 }
@@ -119,6 +119,12 @@ footer p {
 /* ========================================= media queries ======================================== */
 /* Pantalla grande */
 @media (max-width: 1200px) {
+  #intro,
+  #equipo {
+    width: 90% !important;
+    margin: auto !important;
+  }
+
   #local {
     flex-wrap: wrap;
     padding-top: 30px;
@@ -132,13 +138,21 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  #intro #equipo {
+  #intro,
+  #equipo {
     width: 90% !important;
+    margin: auto !important;
   }
 
   #img-equipo {
     max-height: 20rem !important;
     width: 90%;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
   }
 
   #equipo p {
